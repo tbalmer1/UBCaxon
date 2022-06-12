@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// Channel densities
+//-----------------------------------------------------------------------------
+
+myena		=	55
+myek		=	-97
+
+nax_ais = 5000 
+nax_bouton	=	100//1000			 
+nax_axon	=	1000			
+
+Kv1_ais = 10000
+Kv1_bouton	=	200//2000		
+Kv1_axon	=	2000//0
+
+leakK_ais = 0.18
+leakK_bouton	=	0.18//.08
+leakK_axon		=	leakK_bouton  // /10
+
+leakNa_ais = 0.18
+leakNa_bouton	=	leakK_bouton  //  /13
+leakNa_axon	=	leakNa_bouton  //  /10
+
+ih_ais = 0
+ih_bouton	=	0//0.00003
+ih_axon		=	ih_bouton/10
+ih_e		=	-23	
+ih_k_na_ratio	= (myena-ih_e)/(myena-myek)
+
+charge_start	= 1000
+charge_end		= 1030
+
+vShift_Kv1 =	25
+vShift_inact_Kv1 =	-15
+speed_Kv1=2.3
+vShift_nax = 20
+vShift_inact_nax = 10
+q10_nax = 4
+q10h_nax = 4

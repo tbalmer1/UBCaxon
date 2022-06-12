@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Add channel densities
+//-----------------------------------------------------------------------------
+
+for i=0,axNum-1 {
+	axon[i] {    	
+		insert ih
+		ghdbar_ih = ih_axon
+		k_na_ratio_ih = ih_k_na_ratio
+	}
+	bouton[i] {    	
+		insert ih
+		ghdbar_ih = ih_bouton
+		k_na_ratio_ih = ih_k_na_ratio
+	}
+}

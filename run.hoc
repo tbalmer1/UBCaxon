@@ -1,0 +1,6 @@
+xopen("Cell parameters BUILD axon.hoc")
+xopen("Cell parameters DEFINE densities.hoc")
+xopen("Cell parameters ADD nax Kv1 mypas.hoc")
+xopen("Cell parameters ADD Ih.hoc")
+load_file("22121-4.ses")
+run()
